@@ -11,13 +11,13 @@ font:
   bold_italic:
     family: "JetBrainsMono Nerd Font"
     style: Bold Italic
-    size: 15.0
+    size: 19.0
 window:
-  opacity: 0.90
+  opacity: 0.80
 colors:
   primary:
     background: '#24273a'
-    foreground: '#cad3f5'
+    foreground:  '#a6da95'
     dim_foreground: '#8087a2'
     bright_foreground: '#cad3f5'
 
