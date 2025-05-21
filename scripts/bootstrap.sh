@@ -6,7 +6,7 @@ log_file="$HOME/bootstrap.log"
 exec > >(tee -a "$log_file") 2>&1
 
 install_packages() {
-  local packages=(git curl wget python3 python3-pip gh alacritty starship nvim tmux btop tldr fzf ripgrep jq yq)
+  local packages=(git curl wget python3 python3-pip gh alacritty starship nvim tmux btop tldr fzf ripgrep jq yq code)
   echo "Installing core packages..."
   sudo apt update && sudo apt install -y "${packages[@]}"
   echo "Core packages installed."
@@ -72,10 +72,11 @@ setup_git() {
   fi
 }
 
-configure_vscode() {
-  : # TODO: implement
+main() {
+  install_packages
+  link_dotfiles
+  setup_git
 }
 
-secure_machine() {
-  : # TODO: implement
-}
+main "$@"
+echo "Bootstrap script completed. Check $log_file for details."
