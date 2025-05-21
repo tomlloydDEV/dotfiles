@@ -19,12 +19,34 @@ link_dotfiles() {
     ["$HOME/.bashrc"]="$dotfiles_dir/bashrc"
     ["$HOME/.config/starship.toml"]="$dotfiles_dir/.config/starship.toml"
     ["$HOME/.config/alacritty/alacritty.yml"]="$dotfiles_dir/.config/alacritty/alacritty.yml"
-    # ["$HOME/.tmux.conf"]="$dotfiles_dir/tmux.conf" not got round to tmux yet
   )
+
+  for dest in "${!files_to_link[@]}"; do
+    echo "$dest"
+  done
+
+  for dest in "${!files_to_link[@]}"; do
+    local src="${files_to_link[$dest]}"
+    mkdir -p "$(dirname "$dest")"
+
+    if [[ -e "$dest" || -L "$dest" ]]; then
+      local filename
+      filename=$(basename "$dest")
+      mv "$dest" "$backup_dir/$filename.$(date +%s)"
+    fi
+
+    ln --symbolic --force "$src" "$dest"
+  done
 }
 
-setup_git() {...}
+setup_git() {
+  : # TODO: implement
+}
 
-configure_vscode() {...}
+configure_vscode() {
+  : # TODO: implement
+}
 
-secure_machine() {...}
+secure_machine() {
+  : # TODO: implement
+}
