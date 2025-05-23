@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -eu
+set -euo pipefail
 
 log_file="$HOME/bootstrap.log"
 exec > >(tee -a "$log_file") 2>&1
