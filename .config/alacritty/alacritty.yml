@@ -2,79 +2,83 @@ font:
   normal:
     family: "JetBrainsMono Nerd Font"
     style: Regular
+    size: 16.0
   bold:
     family: "JetBrainsMono Nerd Font"
     style: Bold
+  size: 16.0
   italic:
     family: "JetBrainsMono Nerd Font"
     style: Italic
+    size: 16.0
   bold_italic:
     family: "JetBrainsMono Nerd Font"
     style: Bold Italic
-    size: 19.0
+    size: 16.0
+
 window:
-  opacity: 0.80
+  opacity: 0.30
 colors:
   primary:
-    background: '#24273a'
-    foreground:  '#a6da95'
-    dim_foreground: '#8087a2'
-    bright_foreground: '#cad3f5'
+    background: "#24273a"
+    foreground: "#a6da95"
+    dim_foreground: "#8087a2"
+    bright_foreground: "#cad3f5"
 
   cursor:
-    text: '#24273a'
-    cursor: '#f4dbd6'
+    text: "#24273a"
+    cursor: "#f4dbd6"
 
   vi_mode_cursor:
-    text: '#24273a'
-    cursor: '#b7bdf8'
+    text: "#24273a"
+    cursor: "#b7bdf8"
 
   search:
     matches:
-      foreground: '#24273a'
-      background: '#a5adcb'
+      foreground: "#24273a"
+      background: "#a5adcb"
     focused_match:
-      foreground: '#24273a'
-      background: '#a6da95'
+      foreground: "#24273a"
+      background: "#a6da95"
 
   footer_bar:
-    foreground: '#24273a'
-    background: '#a5adcb'
+    foreground: "#24273a"
+    background: "#a5adcb"
 
   hints:
     start:
-      foreground: '#24273a'
-      background: '#eed49f'
+      foreground: "#24273a"
+      background: "#eed49f"
     end:
-      foreground: '#24273a'
-      background: '#a5adcb'
+      foreground: "#24273a"
+      background: "#a5adcb"
 
   selection:
-    text: '#24273a'
-    background: '#f4dbd6'
+    text: "#24273a"
+    background: "#f4dbd6"
 
   normal:
-    black:   '#494d64'
-    red:     '#ed8796'
-    green:   '#a6da95'
-    yellow:  '#eed49f'
-    blue:    '#8aadf4'
-    magenta: '#f5bde6'
-    cyan:    '#8bd5ca'
-    white:   '#b8c0e0'
+    black: "#494d64"
+    red: "#ed8796"
+    green: "#a6da95"
+    yellow: "#eed49f"
+    blue: "#8aadf4"
+    magenta: "#f5bde6"
+    cyan: "#8bd5ca"
+    white: "#b8c0e0"
 
   bright:
-    black:   '#5b6078'
-    red:     '#ed8796'
-    green:   '#a6da95'
-    yellow:  '#eed49f'
-    blue:    '#8aadf4'
-    magenta: '#f5bde6'
-    cyan:    '#8bd5ca'
-    white:   '#a5adcb'
+    black: "#5b6078"
+    red: "#ed8796"
+    green: "#a6da95"
+    yellow: "#eed49f"
+    blue: "#8aadf4"
+    magenta: "#f5bde6"
+    cyan: "#8bd5ca"
+    white: "#a5adcb"
 
   indexed_colors:
     - index: 16
-      color: '#f5a97f'
+      color: "#f5a97f"
     - index: 17
-      color: '#f4dbd6'
+      color: "#f4dbd6"
